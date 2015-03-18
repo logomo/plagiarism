@@ -1,6 +1,4 @@
-package zadania;
-
-import it.zielke.moji.SocketClient;
+package tina.z2015;
 
 import java.io.File;
 import java.net.URL;
@@ -8,17 +6,19 @@ import java.util.Collection;
 
 import org.apache.commons.io.FileUtils;
 
-public class z2 {
+import utils.moji.SocketClient;
+
+public class Z1 {
 	public static void main(String[] args) throws Exception {
 		// a list of students' source code files located in the prepared
 		// directory.
 		Collection<File> files = FileUtils.listFiles(new File(
-				"F:\\z2"), new String[] { "html","css" }, true);
+				"F:\\z1"), new String[] { "html" }, true);
 
 		// a list of base files that was given to the students for this
 		// assignment.
 		Collection<File> baseFiles = FileUtils.listFiles(new File(
-				"F:\\Plagiator\\moss-base-dir"), new String[] { "html","css" }, true);
+				"F:\\Plagiator\\moss-base-dir"), new String[] { "html" }, true);
 
 		// get a new socket client to communicate with the MOSS server
 		// and set its parameters.
